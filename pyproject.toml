@@ -1,0 +1,21 @@
+[project]
+name = "supervisoragent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amar", email = "friend.virgo007@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-groq>=1.1.3",
+    "langgraph>=1.2.20",
+]
+
+[project.scripts]
+supervisoragent = "supervisoragent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
